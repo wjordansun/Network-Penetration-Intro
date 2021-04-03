@@ -1,4 +1,4 @@
-Using python, you can host a server from wherever you are.
+Using python, you can host a server from wherever you are in the file system.
 
 python -m SimpleHTTPServer 80 //python2
 python3 -m http.server 80 //for python3
