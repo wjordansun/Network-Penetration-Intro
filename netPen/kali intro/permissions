@@ -1,0 +1,3 @@
+chmod 777 <filename> gives full read write execute permissions.
+chmod +x <filename> gives execution permissions to everyone
+drwxr-xr-x // d means directory

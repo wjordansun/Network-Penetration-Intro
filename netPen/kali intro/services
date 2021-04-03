@@ -1,0 +1,20 @@
+
+Start web servers(up on curren session):
+
+service apache2 start
+service apache2 stop
+
+python -m SimpleHTTPServer 80
+python3 -m http.server 80 //for python3
+
+pip install pyftpdlib
+python3 -m pyftpdlib -p 21 w //for hosting FTP server
+
+
+
+
+
+Permanent configurations upon boot up:
+
+systemctl enable ssh // only if needed
+systemctl enable postgresql // for metasploit

@@ -1,0 +1,7 @@
+apt-get update && apt-get upgrade // look for packages and then upgrade them.
+
+apt-get install <package name>
+
+apt install pip
+
+git clone <link for impacket>

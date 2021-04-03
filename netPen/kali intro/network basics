@@ -1,0 +1,20 @@
+ifconfig // info about  ip, netmask, broadcast network
+iwconfig // for wireless interfaces
+
+ping 192.168.1.1 // ping in ip to communicate with it back and forth (in this case the router's ip)
+ping 192.168.1.1 -c 1 // send one  packet 
+ping 192.168.1.1 -C 1 > ip.txt // write into ip.txt
+
+cat ip.txt // output is: 64 bytes from 192.168.1.1: icmp_seq=1 ttl=128 time=2.21ms
+cat ip.txt | grep “64 bytes” // grep outputs all lines that contain “64 bytes”
+cat ip.txt | grep “64 bytes” | cut -d “ ” -f 4 // cut delimitor cuts the spaces “ ” -f is field 4
+
+cat ip.txt | grep “64 bytes” | cut -d “ ” -f 4 | tr -d “:” // tr is translate, removes the colon.
+//output of above command is just the ip address, in this case (192.168.1.1)
+
+arp -a //matches ips to mac addresses
+
+netstat -ano //shows ports open on devices
+
+route //shows gateways
+

@@ -1,0 +1,7 @@
+vim ipsweep.sh
+chmod +x ipsweep.sh // change mode to allow file to be executed
+
+./ipsweep 192.168.1.1 > iplist.txt // puts ips in iplist.txt file
+& in a script means running multiple things at once, without it, everything is done one at a time
+
+for ip in $(cat iplist.txt); do nmap -sS -p 80 -T4 $ip & done // -stealth search -port -t$ is for speed, ‘&’ for eveything to run at once.
