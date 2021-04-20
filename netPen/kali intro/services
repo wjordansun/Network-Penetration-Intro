@@ -11,9 +11,6 @@ pip install pyftpdlib
 python3 -m pyftpdlib -p 21 w //for hosting FTP server
 
 
-
-
-
 Permanent configurations upon boot up:
 
 systemctl enable ssh // only if needed
